@@ -88,11 +88,12 @@
                 android:layout_column="2"
                 android:src="@drawable/darth_vader_big"
                 android:layout_gravity="bottom|center_horizontal" />
+
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/but22"
-                android:layout_column="2"
+                android:layout_column="5"
                 android:src="@drawable/darth_vader_big"
                 android:layout_gravity="bottom|center_horizontal" />
         </TableRow>
