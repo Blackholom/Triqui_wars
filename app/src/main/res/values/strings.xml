@@ -6,4 +6,9 @@
     <string name="title_activity_game">Game</string>
     <string name="choose_site">Choose your site</string>
     <string name="triqui_wars">Triqui Wars</string>
+    <string name="play">Play!</string>
+    <string name="winner">Winner!</string>
+    <string name="Tie">Tie</string>
+    <string name="play_again">Play Again</string>
+
 </resources>

@@ -1,5 +1,6 @@
 package com.example.kevin.triqui_wars;
 
+import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -7,6 +8,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.TextView;
 
 public class Game extends AppCompatActivity {
 
@@ -14,6 +16,10 @@ public class Game extends AppCompatActivity {
     private String side;
     private String mode;
     private JuegoTriqui mundo;
+    private TextView txtTriqui;
+    private TextView txtPlay;
+    private TextView txtTriquiWinner;
+    private TextView txtWinner;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -32,6 +38,28 @@ public class Game extends AppCompatActivity {
         btn20 = (ImageButton)findViewById(R.id.but20);
         btn21 = (ImageButton)findViewById(R.id.but21);
         btn22 = (ImageButton)findViewById(R.id.but22);
+
+        //Inicializo las variables de tipo TextView para hacer el cambio de fuente.
+        txtTriqui = (TextView)findViewById(R.id.txtTriquiGame);
+        txtPlay = (TextView)findViewById(R.id.txtPlay2);
+        txtTriquiWinner = (TextView) findViewById(R.id.txtTriquiWinner);
+        txtWinner = (TextView) findViewById(R.id.txtWinner);
+
+        changeFont();
+
+    }
+
+    public void changeFont(){
+
+        Typeface custom_font = Typeface.createFromAsset(getAssets(),  "fonts/Starjedi.ttf");
+
+        //title.setTypeface(custom_font);
+        txtTriqui.setTypeface(custom_font);
+        txtPlay.setTypeface(custom_font);
+        txtTriquiWinner.setTypeface(custom_font);
+        txtWinner.setTypeface(custom_font);
+
+
     }
 
     @Override

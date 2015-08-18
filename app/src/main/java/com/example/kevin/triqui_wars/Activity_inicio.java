@@ -17,6 +17,8 @@ public class Activity_inicio extends AppCompatActivity {
     private TextView title;
     private TextView triqui;
     private TextView choose;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -67,6 +69,8 @@ public class Activity_inicio extends AppCompatActivity {
         //title.setTypeface(custom_font);
         triqui.setTypeface(custom_font);
         choose.setTypeface(custom_font);
+
+
 
 
     }

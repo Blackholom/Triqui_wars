@@ -4,17 +4,21 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@drawable/background"
     tools:context="com.example.kevin.triqui_wars.Game">
 
     <TableLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true">
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tableLayout"
+        android:layout_centerVertical="true"
+        android:background="@drawable/border"
+        android:layout_centerHorizontal="true">
 
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:background="@drawable/border"
             android:layout_gravity="bottom|center_horizontal">
 
             <ImageButton
@@ -22,7 +26,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/but00"
                 android:layout_column="2"
-                android:src="@drawable/darth_vader_big"
+                android:src="@drawable/weapon1"
                 android:layout_gravity="bottom|center_horizontal" />
 
             <ImageButton
@@ -30,19 +34,20 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/but01"
                 android:layout_column="2"
-                android:src="@drawable/darth_vader_big"
+                android:src="@drawable/weapon1"
                 android:layout_gravity="bottom|center_horizontal" />
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/but02"
                 android:layout_column="2"
-                android:src="@drawable/darth_vader_big"
+                android:src="@drawable/weapon1"
                 android:layout_gravity="bottom|center_horizontal" />
         </TableRow>
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:background="@drawable/border"
             android:layout_gravity="bottom|center_horizontal">
 
             <ImageButton
@@ -50,7 +55,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/but10"
                 android:layout_column="2"
-                android:src="@drawable/darth_vader_big"
+                android:src="@drawable/weapon1"
                 android:layout_gravity="bottom|center_horizontal" />
 
             <ImageButton
@@ -58,19 +63,20 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/but11"
                 android:layout_column="2"
-                android:src="@drawable/darth_vader_big"
+                android:src="@drawable/weapon1"
                 android:layout_gravity="bottom|center_horizontal" />
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/but12"
                 android:layout_column="2"
-                android:src="@drawable/darth_vader_big"
+                android:src="@drawable/weapon1"
                 android:layout_gravity="bottom|center_horizontal" />
         </TableRow>
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:background="@drawable/border"
             android:layout_gravity="bottom|center_horizontal">
 
             <ImageButton
@@ -78,7 +84,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/but20"
                 android:layout_column="2"
-                android:src="@drawable/darth_vader_big"
+                android:src="@drawable/weapon1"
                 android:layout_gravity="bottom|center_horizontal" />
 
             <ImageButton
@@ -86,15 +92,35 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/but21"
                 android:layout_column="2"
-                android:src="@drawable/darth_vader_big"
+                android:src="@drawable/weapon1"
                 android:layout_gravity="bottom|center_horizontal" />
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/but22"
                 android:layout_column="2"
-                android:src="@drawable/darth_vader_big"
+                android:src="@drawable/weapon1"
                 android:layout_gravity="bottom|center_horizontal" />
         </TableRow>
     </TableLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/triqui_wars"
+        android:id="@+id/txtTriquiGame"
+        android:textColor="#ffffff"
+        android:textSize="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/play"
+        android:id="@+id/txtPlay2"
+        android:textSize="40dp"
+        android:layout_below="@+id/txtTriquiGame"
+        android:layout_centerHorizontal="true" />
+
 </RelativeLayout>
