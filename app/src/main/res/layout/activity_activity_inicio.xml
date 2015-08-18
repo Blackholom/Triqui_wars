@@ -3,61 +3,66 @@
     android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".Activity_inicio">
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".Activity_inicio"
+    android:background="@drawable/background"
+    >
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/triqui_wars"
+        android:id="@+id/triqui"
+        android:textColor="#ffffff"
+        android:textSize="40dp"
         android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true">
+        android:layout_centerHorizontal="true" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="CHOOSE YOUR SIDE"
-            android:id="@+id/title"
-            android:gravity="center_horizontal"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:typeface="monospace"
-            android:textSize="45dp" />
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/empire"
+        android:background="@drawable/imperial1"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/triqui" />
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Arcade"
-            android:id="@+id/arcade"
-            android:typeface="monospace"
-            android:textSize="30dp"
-            android:layout_above="@+id/versus"
-            android:layout_centerHorizontal="true" />
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rebels"
+        android:background="@drawable/rebelde"
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Versus"
-            android:id="@+id/versus"
-            android:typeface="monospace"
-            android:textSize="30dp"
-            android:layout_alignParentBottom="true"
-            android:layout_alignStart="@+id/arcade" />
+        android:layout_alignTop="@+id/empire"
+        android:layout_alignParentEnd="true" />
 
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/empire"
-            android:src="@drawable/darth_vader_big"
-            android:layout_centerVertical="true"
-            android:layout_centerHorizontal="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/choose_site"
+        android:id="@+id/choose"
+        android:textSize="20dp"
+        android:layout_below="@+id/triqui"
+        android:layout_centerHorizontal="true" />
 
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/rebels"
-            android:src="@drawable/yoda_big"
-            android:layout_above="@+id/empire"
-            android:layout_centerHorizontal="true"
-            android:visibility="visible" />
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton"
+        android:layout_marginTop="28dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/robot"
+        android:background="@drawable/border"
+        android:layout_below="@+id/empire"
+        android:layout_gravity="center" />
 
-    </RelativeLayout>
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton2"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/human1"
+        android:background="@drawable/border"
+        android:layout_below="@+id/imageButton"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center" />
+
 </RelativeLayout>

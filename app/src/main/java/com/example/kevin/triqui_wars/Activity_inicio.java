@@ -1,7 +1,7 @@
 package com.example.kevin.triqui_wars;
 
 import android.content.Intent;
-import android.media.Image;
+import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -15,6 +15,8 @@ public class Activity_inicio extends AppCompatActivity {
     private ImageButton rebels;
     private String side;
     private TextView title;
+    private TextView triqui;
+    private TextView choose;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,7 +25,11 @@ public class Activity_inicio extends AppCompatActivity {
         empire=(ImageButton) findViewById(R.id.empire);
         rebels=(ImageButton) findViewById(R.id.rebels);
         title=(TextView) findViewById(R.id.title);
-        side="";
+        triqui =(TextView) findViewById(R.id.triqui);
+        choose = (TextView) findViewById(R.id.choose);
+
+        changeFont();
+
 
         //switchImage();
     }
@@ -50,6 +56,20 @@ public class Activity_inicio extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
+    /**
+     * Método encargado de hacer el cambio de las fuentes de los text view elegidos
+     *
+     */
+    public void changeFont(){
+
+        Typeface custom_font = Typeface.createFromAsset(getAssets(),  "fonts/Starjedi.ttf");
+
+        //title.setTypeface(custom_font);
+        triqui.setTypeface(custom_font);
+        choose.setTypeface(custom_font);
+
+
+    }
     public void game_mode(){
         Intent intent = new Intent(this, Game.class);
         
